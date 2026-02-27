@@ -49,7 +49,7 @@
     const hydra = new Hydra({ detectAudio: false });
 
     const palabras = {
-      hola: () => osc(2,2,0.05).mask(shape(6,.5,.02)).rotate(45,6).add(noise(2,2,0.2)).colorama().add(osc(2,1,1)).modulateRepeat(noise(2),1),
+      hola: () => osc(3,2,0.05).mask(shape(6,.5,.02)).rotate(45,6).add(noise(2,2,0.2)).colorama().add(osc(2,1,1)).modulateRepeat(noise(2),1),
       mi: () => voronoi(20,2,0.2).modulate(voronoi(3,3,0.1)).add(osc(2,2,0.1)).diff(noise(2,0.1,0.2)).add(shape(20,.4,0.2)).modulateRotate(noise(3,1,1)).color(1,2,3),
       nombre: () => noise(2,0.2,0.3).mult(osc(2,2,0.05),3).modulateKaleid(osc(2,2,0.5),50).color(3,1,1).blend(noise(2,2,0.3)).modulateRotate(osc(3,2,0.1),44).add(shape(40,0.002,0.2)),
       es: () => shape(4).repeat(10,10).modulateScale(noise(2)).add(osc(2,0.2,0.05)).modulate(noise(3,2)).colorama().rotate(30,0.02).modulatePixelate(osc(2)).modulateScale(noise(2)).color(1,1,2).modulateKaleid(shape(40),2).modulatePixelate(voronoi(6)),
